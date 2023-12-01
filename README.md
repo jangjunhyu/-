@@ -104,3 +104,11 @@ ToyConn 서비스의 핵심 기능은 로그인 이후 해당 유저 동네에 �
 	<li>DB에 저장 후 값을 바로 받아와 sendRedirect 형식으로 데이터 전송</li>
 </ul>
 <img src="https://github.com/jangjunhyu/-/assets/120622212/66d0ce2c-2040-4847-b104-49ea208434ac">
+
+<h4>결제 기능</h4>
+<ul>
+	<li>채팅을 마친 사용자는 아래쪽에 대여 시작날짜, 마감 날짜 선택 후 결제하기 버튼 클릭</li>
+	<li>결제 정보를 확인(대여 일수, 대여 총 금액)</li>
+	<li>'온라인 버튼'클릭 시 import api를 사용하여 카카오 pay로 결제 진행</li>
+</ul>
+<img src="https://github.com/jangjunhyu/-/assets/120622212/a3b7d0e4-a24f-47bc-a1d9-0decf64d292b">
