@@ -54,3 +54,41 @@ ToyConn 서비스의 핵심 기능은 로그인 이후 해당 유저 동네에 �
 카카오 map api를 활용하여 등록된 장난감의 소유 유저의 주소 확인 후 해당 위치에 마커 생성
 
 <img src="https://github.com/jangjunhyu/-/assets/120622212/22309cc6-fea2-4105-9105-6faec8b21106">
+
+~~~java
+<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c4761ef1bd1bad042ac92bb3429a6cd9&libraries=services"></script>
+	<script type="text/javascript">
+		function moveChat() {
+			document.querySelector(
+			"#goChat").submit();
+		}
+	</script>
+	<script>
+	var mapContainer = document.getElementById('map'), 
+	mapOption = {
+	    center: new kakao.maps.LatLng(37.566826, 126.9786567), 
+	    level: 3 
+	};  
+   
+	var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+	var geocoder = new kakao.maps.services.Geocoder();
+
+	geocoder.addressSearch('<%=Taddress%>'
+			, function(result, status) {
+
+			if (status === kakao.maps.services.Status.OK) {
+
+				var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+				var marker = new kakao.maps.Marker({
+					map : map,
+					position : coords
+				});
+
+				map.setCenter(coords);
+			}
+		});
+	</script>
+~~~
