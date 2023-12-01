@@ -7,5 +7,4 @@ ToyConn 서비스의 핵심 기능은 로그인 이후 해당 유저 동네에 �
 <h4>
     동네에 위치한 장난감 표시 기능
 </h4>
-![image](https://github.com/jangjunhyu/-/assets/120622212/abef2854-505f-46d3-a89b-911958564eb2)
-
+![image](https://github.com/jangjunhyu/-/assets/120622212/fd93cd8e-6400-4460-9c24-03c702383768)
